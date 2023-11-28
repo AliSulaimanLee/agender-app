@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.agender.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.agender.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxone.ui.Iphone14ProMaxOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxsix.ui.Iphone14ProMaxSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxten.ui.Iphone14ProMaxTenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxnine.ui.Iphone14ProMaxNineActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.agender.app.modules.iphone14promaxfour.ui.Iphone14ProMaxFourActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxeleven.ui.Iphone14ProMaxElevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxeightcontainer.ui.Iphone14ProMaxEightContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxtwo.ui.Iphone14ProMaxTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxfive.ui.Iphone14ProMaxFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxthree.ui.Iphone14ProMaxThreeActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
