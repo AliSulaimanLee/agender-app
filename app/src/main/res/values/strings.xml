@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">agender</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg_5_videos_3_ar">5 Videos | 3 Articles</string>
+  <string name="msg_login_to_your_a">Login to your account</string>
+  <string name="lbl_email">Email</string>
+  <string name="msg_what_do_you_wan">What do you want to know?</string>
+  <string name="msg_what_is_gender">What is gender equality?</string>
+  <string name="lbl_next">Next</string>
+  <string name="lbl_hi_james">Hi, James!</string>
+  <string name="msg_don_t_have_an_a">Don\u2019t have an account? Sign up here</string>
+  <string name="msg_confirm_passwor">Confirm password</string>
+  <string name="msg_learn_more_abou">Learn more about gender equality</string>
+  <string name="lbl_material_detail">Material Detail</string>
+  <string name="msg_don_t_have_an_a2">Don\u2019t have an account? </string>
+  <string name="lbl_agender">Agender</string>
+  <string name="lbl_home">Home</string>
+  <string name="msg_create_your_acc">Create your account</string>
+  <string name="msg_already_have_an">Already have an account? Log in here</string>
+  <string name="msg_introduction_to">Introduction to Agender</string>
+  <string name="lbl_4_5">4.5</string>
+  <string name="msg_lorem_ipsum_dol3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus sit amet dui ut placerat. Donec commodo vehicula nisi vitae pulvinar. In venenatis, nulla id varius accumsan, ligula elit pretium dui, eu placerat nisi nisi id nulla. Duis nec odio dapibus, ultrices tellus nec, efficitur ex. Sed a malesuada mi. Morbi id mi nec risus sagittis finibus. Vivamus nec turpis facilisis, consequat lorem eu, elementum nulla. Aliquam quis auctor ex. Morbi non cursus metus.</string>
+  <string name="msg_or_sign_in_wit">-Or sign in with-</string>
+  <string name="msg_lorem_ipsum_dol2">Lorem ipsum dolor</string>
+  <string name="msg_already_have_an2">Already have an account? </string>
+  <string name="lbl_lorem_ipsum">Lorem ipsum</string>
+  <string name="lbl_10_chapter">10 Chapter</string>
+  <string name="lbl_sign_in">Sign In</string>
+  <string name="lbl_sign_up_here">Sign up here</string>
+  <string name="lbl_material">Material</string>
+  <string name="lbl_log_in_here">Log in here</string>
+  <string name="lbl_eksplore">Eksplore</string>
+  <string name="msg_be_a_nice_perso">Be a nice person by learning about gender!</string>
+  <string name="lbl_get_started">Get Started</string>
+  <string name="lbl_sign_up">Sign Up</string>
+  <string name="lbl_password">Password</string>
+  <string name="msg_lorem_ipsum_dol">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis, odio ac iaculis congue, leo turpis interdum mauris, ut tempus turpis nibh ac nibh. Phasellus at sagittis lacus. Aliquam a</string>
+  <string name="lbl_profile">Profile</string>
+  <string name="msg_an_online_platf">An online platform to make new knowledge about gender equality</string>
+  <string name="msg_recently_explor">Recently explored</string>
+  <string name="lbl_introduction">Introduction</string>
+  <string name="lbl_4_chapter">4 Chapter</string>
+<string name="msg_please_enter_valid_pa">Please enter valid password</string>
+<string name="msg_please_enter_valid_email">Please enter valid email</string>
+</resources>

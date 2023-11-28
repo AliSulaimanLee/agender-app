@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14ProMaxTenVM" type="com.agender.app.modules.iphone14promaxten.data.viewmodel.Iphone14ProMaxTenVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_40pxv"
+        android:layout_marginEnd="@dimen/_40pxh"
+        android:layout_marginStart="@dimen/_40pxh"
+        android:layout_marginTop="@dimen/_38pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_6pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLoremipsum"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_123pxh"
+                    android:layout_weight="0.93"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_7pxh"
+                    android:singleLine="true"
+                    android:text="@{iphone14ProMaxTenVM.iphone14ProMaxTenModel.txtLoremipsum}"
+                    style="@style/txtPoppinsmedium14" tools:text="@string/lbl_lorem_ipsum"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnrectanglesix"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_50">
+            <FrameLayout android:id="@+id/frameStackrectanglesix"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_214pxv"
+                android:layout_marginEnd="@dimen/_2pxh" android:layout_width="@dimen/_348pxh">
+                <ImageView android:id="@+id/imageRectangleSix"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_214pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_10pxh}"
+                    imageRes="@{@drawable/img_rectangle6_214x348}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6_214x348"/>
+                <ImageView android:id="@+id/imagePlay"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_50pxh"
+                    android:layout_marginHorizontal="@dimen/_40pxh"
+                    android:layout_marginVertical="@dimen/_40pxv"
+                    android:layout_width="@dimen/_50pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_play_deep_orange_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_play_deep_orange_a700"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLoremipsumdol"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:singleLine="true"
+                android:text="@{iphone14ProMaxTenVM.iphone14ProMaxTenModel.txtLoremipsumdol}"
+                style="@style/txtPoppinssemibold15" tools:text="@string/msg_lorem_ipsum_dol2"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:text="@{iphone14ProMaxTenVM.iphone14ProMaxTenModel.txtDescription}"
+                style="@style/txtPoppinsregular12" tools:text="@string/msg_lorem_ipsum_dol"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnNext"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_445pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_next"
+                android:textAllCaps="false"
+                style="@style/btnGradientRounded" tools:text="@string/lbl_next"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
