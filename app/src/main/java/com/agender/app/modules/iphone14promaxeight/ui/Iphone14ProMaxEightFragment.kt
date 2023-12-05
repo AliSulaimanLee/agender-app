@@ -9,6 +9,7 @@ import com.agender.app.databinding.FragmentIphone14ProMaxEightBinding
 import com.agender.app.modules.iphone14promaxeight.`data`.model.GridrectanglesixTwoRowModel
 import com.agender.app.modules.iphone14promaxeight.`data`.model.ListrectanglesixRowModel
 import com.agender.app.modules.iphone14promaxeight.`data`.viewmodel.Iphone14ProMaxEightVM
+import com.agender.app.modules.iphone14promaxnine.ui.Iphone14ProMaxNineActivity
 import kotlin.Int
 import kotlin.String
 import kotlin.Unit
@@ -16,6 +17,8 @@ import kotlin.Unit
 class Iphone14ProMaxEightFragment :
     BaseFragment<FragmentIphone14ProMaxEightBinding>(R.layout.fragment_iphone_14_pro_max_eight) {
   private val viewModel: Iphone14ProMaxEightVM by viewModels<Iphone14ProMaxEightVM>()
+
+  private val REQUEST_CODE_IPHONE14PRO_MAX_NINE_ACTIVITY: Int = 990
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = arguments
@@ -57,6 +60,11 @@ class Iphone14ProMaxEightFragment :
     item: ListrectanglesixRowModel
   ): Unit {
     when(view.id) {
+      R.id.linearColumnrectanglesix ->  {
+        val destIntent = Iphone14ProMaxNineActivity.getIntent(requireActivity(), null)
+        startActivityForResult(destIntent, REQUEST_CODE_IPHONE14PRO_MAX_NINE_ACTIVITY)
+        requireActivity().onBackPressed()
+      }
     }
   }
 

@@ -44,4 +44,5 @@
   <string name="lbl_4_chapter">4 Chapter</string>
 <string name="msg_please_enter_valid_pa">Please enter valid password</string>
 <string name="msg_please_enter_valid_email">Please enter valid email</string>
+<string name="lbl_error">Error</string>
 </resources>

@@ -8,21 +8,21 @@
         android:name="com.agender.app.appcomponents.di.MyApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
-        <activity
-            android:name="com.agender.app.modules.iphone14promaxone.ui.Iphone14ProMaxOneActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.agender.app.modules.iphone14promaxone.ui.Iphone14ProMaxOneActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.agender.app.modules.iphone14promaxsix.ui.Iphone14ProMaxSixActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.agender.app.modules.iphone14promaxten.ui.Iphone14ProMaxTenActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.agender.app.modules.iphone14promaxnine.ui.Iphone14ProMaxNineActivity" android:screenOrientation="portrait"/>
-        <activity android:exported="true"
-            android:name="com.agender.app.modules.iphone14promaxfour.ui.Iphone14ProMaxFourActivity" android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+        <activity
+            android:name="com.agender.app.modules.iphone14promaxfour.ui.Iphone14ProMaxFourActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.agender.app.modules.iphone14promaxeleven.ui.Iphone14ProMaxElevenActivity" android:screenOrientation="portrait"/>
         <activity

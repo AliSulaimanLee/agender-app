@@ -22,7 +22,7 @@ import com.agender.app.R
 /**
  * to load url based image assign base url of image.
  */
-const val IMAGE_BASE_URL = ""
+const val IMAGE_BASE_URL = "https://nodedemo.dhiwise.co"
 
 /**
  * method which manages the visibility of views
@@ -139,4 +139,5 @@ fun setTextUnderline(
         textView.paintFlags = textView.paintFlags or Paint.UNDERLINE_TEXT_FLAG
     }
 }
+
 

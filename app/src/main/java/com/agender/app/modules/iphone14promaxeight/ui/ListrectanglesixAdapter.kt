@@ -53,5 +53,11 @@ class ListrectanglesixAdapter(
     view: View
   ) : RecyclerView.ViewHolder(view) {
     val binding: RowListrectanglesixBinding = RowListrectanglesixBinding.bind(itemView)
+    init {
+      binding.linearColumnrectanglesix.setOnClickListener {
+        // TODO replace with value from datasource
+        clickListener?.onItemClick(it, adapterPosition, ListrectanglesixRowModel())
+      }
+    }
   }
 }

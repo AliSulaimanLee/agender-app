@@ -1,5 +1,8 @@
 package com.agender.app.modules.iphone14promaxeleven.ui
 
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import androidx.activity.viewModels
 import com.agender.app.R
 import com.agender.app.appcomponents.base.BaseActivity
@@ -26,5 +29,11 @@ class Iphone14ProMaxElevenActivity :
   companion object {
     const val TAG: String = "IPHONE14PRO_MAX_ELEVEN_ACTIVITY"
 
+
+    fun getIntent(context: Context, bundle: Bundle?): Intent {
+      val destIntent = Intent(context, Iphone14ProMaxElevenActivity::class.java)
+      destIntent.putExtra("bundle", bundle)
+      return destIntent
+    }
   }
 }
