@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="introductionThreeVM" type="com.agender.app.modules.introductionthree.data.viewmodel.IntroductionThreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameIntroductionTh"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylecyan_900">
+        <ImageView android:id="@+id/imageGroupEleven"
+            android:layout_gravity="bottom|end"
+            android:layout_height="@dimen/_817pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_152pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_group11_red_700}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_group11_red_700"/>
+        <TextView android:id="@+id/txtPahamidantera"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_229pxv"
+            android:layout_marginEnd="@dimen/_152pxh"
+            android:layout_marginStart="@dimen/_152pxh"
+            android:layout_marginTop="@dimen/_229pxv"
+            android:layout_width="wrap_content"
+            android:text="@{introductionThreeVM.introductionThreeModel.txtPahamidantera}"
+            style="@style/txtPoppinssemibold20" tools:text="@string/msg_pahami_dan_tera"/>
+        <TextView android:gravity="top|center"
+            android:id="@+id/txtPahamidanteraOne"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_172pxv"
+            android:layout_marginEnd="@dimen/_80pxh"
+            android:layout_marginStart="@dimen/_80pxh"
+            android:layout_marginTop="@dimen/_172pxv"
+            android:layout_width="match_parent"
+            android:text="@{introductionThreeVM.introductionThreeModel.txtPahamidanteraOne}"
+            style="@style/txtPoppinsregular16_1" tools:text="@string/msg_pahami_dan_tera2"/>
+        <LinearLayout android:id="@+id/linearRowrectanglefour"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_145pxv"
+            android:layout_marginEnd="@dimen/_115pxh"
+            android:layout_marginStart="@dimen/_115pxh"
+            android:layout_marginTop="@dimen/_145pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <View
+                android:background="@drawable/rectangle_bg_teal_400_radius_5"
+                android:id="@+id/viewRectangleFour"
+                android:layout_height="@dimen/_10pxv" android:layout_width="@dimen/_48pxh"/>
+            <View
+                android:background="@drawable/rectangle_bg_teal_400_radius_5"
+                android:id="@+id/viewRectangleFourOne"
+                android:layout_height="@dimen/_10pxv"
+                android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_48pxh"/>
+        </LinearLayout>
+        <View
+            android:background="@drawable/rectangle_bg_teal_900_radius_5"
+            android:id="@+id/viewRectangleFourTwo"
+            android:layout_gravity="bottom|end"
+            android:layout_height="@dimen/_10pxv"
+            android:layout_marginBottom="@dimen/_145pxv"
+            android:layout_marginEnd="@dimen/_114pxh"
+            android:layout_marginStart="@dimen/_114pxh"
+            android:layout_marginTop="@dimen/_145pxv" android:layout_width="@dimen/_85pxh"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnGetStarted"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_67pxv"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_19pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_19pxv" android:singleLine="true"
+            android:text="@string/lbl_get_started"
+            android:textAllCaps="false" style="@style/btnSolidRounded_2" tools:text="@string/lbl_get_started"/>
+        <ImageView android:id="@+id/imageShinewaiterin"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_476pxh"
+            android:layout_marginBottom="@dimen/_71pxv"
+            android:layout_marginEnd="@dimen/_86pxh"
+            android:layout_marginStart="@dimen/_86pxh"
+            android:layout_marginTop="@dimen/_71pxv"
+            android:layout_width="@dimen/_210pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_shinewaiterin}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_shinewaiterin"/>
+    </FrameLayout>
+</layout>

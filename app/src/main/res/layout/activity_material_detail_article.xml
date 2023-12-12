@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="materialDetailArticleVM" type="com.agender.app.modules.materialdetailarticle.data.viewmodel.MaterialDetailArticleVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_40pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearMaterialdetail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:gravity="start"
+                    android:id="@+id/frameStackarrowleft"
+                    android:layout_height="@dimen/_532pxv" android:layout_width="match_parent">
+                    <LinearLayout android:id="@+id/linearRowarrowleft"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStylecyan_1">
+                        <ImageView android:id="@+id/imageArrowleft"
+                            android:layout_height="@dimen/_11pxh"
+                            android:layout_marginBottom="@dimen/_48pxv"
+                            android:layout_marginStart="@dimen/_40pxh"
+                            android:layout_marginTop="@dimen/_42pxv"
+                            android:layout_width="@dimen/_6pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_arrowleft_gray_50"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_gray_50"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtArtikelmateri"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_43pxv"
+                            android:layout_marginEnd="@dimen/_170pxh"
+                            android:layout_marginStart="@dimen/_122pxh"
+                            android:layout_marginTop="@dimen/_37pxv"
+                            android:layout_weight="0.93"
+                            android:layout_width="0dp"
+                            android:lineSpacingExtra="@dimen/_7pxh"
+                            android:singleLine="true"
+                            android:text="@{materialDetailArticleVM.materialDetailArticleModel.txtArtikelmateri}"
+                            style="@style/txtPoppinsmedium14_2" tools:text="@string/lbl_artikel_materi"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageRectangleSix"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="@dimen/_442pxh"
+                        android:layout_marginEnd="@dimen/_40pxh"
+                        android:layout_marginStart="@dimen/_40pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_350pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_10pxh}"
+                        imageRes="@{@drawable/img_rectangle6_442x348}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle6_442x348"/>
+                </FrameLayout>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtMemahamiEsensi"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_7pxh"
+                    android:text="@{materialDetailArticleVM.materialDetailArticleModel.txtMemahamiEsensi}"
+                    style="@style/txtPoppinssemibold15_2" tools:text="@string/msg_memahami_esensi"/>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{materialDetailArticleVM.materialDetailArticleModel.txtDescription}"
+                    style="@style/txtPoppinsregular12" tools:text="@string/msg_artikel_ini_men"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnNext"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_62pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_next"
+                    android:textAllCaps="false"
+                    style="@style/btnGradientRounded" tools:text="@string/lbl_next"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

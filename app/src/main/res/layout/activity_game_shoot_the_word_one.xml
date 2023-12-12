@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gameShootTheWordOneVM" type="com.agender.app.modules.gameshootthewordone.data.viewmodel.GameShootTheWordOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackairywomanshoo"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_40pxh"
+        android:layout_marginTop="@dimen/_48pxv"
+        android:layout_width="match_parent" style="@style/groupStyle">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start" android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameGameshootthe"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageAirywomanshoo"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_279pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_306pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_airywomanshoo_279x306}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_airywomanshoo_279x306"/>
+                <LinearLayout android:id="@+id/linearColumnskorkamu"
+                    android:layout_gravity="top|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_2">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSkorkamu"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_87pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{gameShootTheWordOneVM.gameShootTheWordOneModel.txtSkorkamu}"
+                        style="@style/txtPoppinssemibold24_1" tools:text="@string/lbl_skor_kamu"/>
+                    <View android:background="@color/gray_503"
+                        android:id="@+id/lineLineOne"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_2pxv"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_316pxh"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackkamuberhasilm"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_505pxv"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_26pxv" android:layout_width="@dimen/_289pxh">
+                        <FrameLayout android:id="@+id/frameStackeighty"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_265pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_12pxh"
+                            android:layout_marginStart="@dimen/_12pxh"
+                            android:layout_width="@dimen/_265pxh" style="@style/groupStylecornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtEighty"
+                                android:layout_gravity="top|center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_71pxv"
+                                android:layout_marginEnd="@dimen/_106pxh"
+                                android:layout_marginStart="@dimen/_106pxh"
+                                android:layout_marginTop="@dimen/_71pxv"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{gameShootTheWordOneVM.gameShootTheWordOneModel.txtEighty}"
+                                style="@style/txtPoppinssemibold39_1" tools:text="@string/lbl_80"/>
+                            <FrameLayout
+                                android:background="@color/indigo_400_7f"
+                                android:id="@+id/frameGroupSixtySix"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+                        </FrameLayout>
+                        <LinearLayout
+                            android:id="@+id/linearColumnkamuberhasilm"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent" android:orientation="vertical">
+                            <TextView
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtKamuberhasilm"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5pxh"
+                                android:layout_width="match_parent"
+                                android:text="@{gameShootTheWordOneVM.gameShootTheWordOneModel.txtKamuberhasilm}"
+                                style="@style/txtPoppinsmedium15_3" tools:text="@string/msg_kamu_berhasil_m"/>
+                            <ImageView
+                                android:id="@+id/imageA37b8926c9abFour"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_181pxh"
+                                android:layout_marginEnd="@dimen/_82pxh"
+                                android:layout_marginStart="@dimen/_82pxh"
+                                android:layout_marginTop="@dimen/_33pxv"
+                                android:layout_width="@dimen/_113pxh"
+                                android:scaleType="fitXY"
+                                imageRes="@{@drawable/img_a37b8926c9ab4}"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_a37b8926c9ab4"/>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:id="@+id/btnMateriBerikutnya"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_5pxh"
+                                android:layout_marginTop="@dimen/_32pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_10pxv"
+                                android:paddingEnd="@dimen/_30pxh"
+                                android:paddingStart="@dimen/_30pxh"
+                                android:paddingTop="@dimen/_10pxv"
+                                android:singleLine="true"
+                                android:text="@string/msg_materi_berikutn"
+                                android:textAllCaps="false"
+                                style="@style/btnSolidRounded_3" tools:text="@string/msg_materi_berikutn"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnKembali"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_88pxv"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_28pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_10pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_10pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_kembali"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_2" tools:text="@string/lbl_kembali"/>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

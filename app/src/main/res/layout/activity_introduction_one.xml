@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="introductionOneVM" type="com.agender.app.modules.introductionone.data.viewmodel.IntroductionOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameIntroductionOn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylecyan_900">
+        <LinearLayout android:id="@+id/linearColumnshineyoungwom"
+            android:layout_gravity="top|start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackshineyoungwom"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_547pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_296pxh">
+                <ImageView android:id="@+id/imageShineyoungwom"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="@dimen/_476pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_162pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_shineyoungwom}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_shineyoungwom"/>
+                <ImageView android:id="@+id/imageGroupEleven"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_442pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_256pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_group11}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group11"/>
+            </FrameLayout>
+            <TextView android:gravity="end"
+                android:id="@+id/txtPelajarikeseta"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_55pxv"
+                android:layout_width="match_parent"
+                android:text="@{introductionOneVM.introductionOneModel.txtPelajarikeseta}"
+                style="@style/txtPoppinssemibold20" tools:text="@string/msg_pelajari_keseta"/>
+            <TextView android:gravity="end"
+                android:id="@+id/txtPlatformdigita"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:text="@{introductionOneVM.introductionOneModel.txtPlatformdigita}"
+                style="@style/txtPoppinsregular16_1" tools:text="@string/msg_platform_digita"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowrectanglefour"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_teal_900_radius_5"
+                    android:id="@+id/viewRectangleFour"
+                    android:layout_height="@dimen/_10pxv" android:layout_width="@dimen/_85pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_teal_400_radius_5"
+                    android:id="@+id/viewRectangleFourOne"
+                    android:layout_height="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_48pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_teal_400_radius_5"
+                    android:id="@+id/viewRectangleFourTwo"
+                    android:layout_height="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_48pxh"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

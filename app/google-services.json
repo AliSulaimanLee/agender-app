@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "583555737824",
+    "project_id": "agender-98f63",
+    "storage_bucket": "agender-98f63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583555737824:android:050546e86eda40b1a10885",
+        "android_client_info": {
+          "package_name": "com.agender.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt-X4H9II-ulo8SI7qDSRjypJZmGP_KuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

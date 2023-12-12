@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="forumVM" type="com.agender.app.modules.forum.data.viewmodel.ForumVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnframefour"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearForum"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_80pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:gravity="start"
+                    android:id="@+id/frameStackforum"
+                    android:layout_height="@dimen/_129pxv" android:layout_width="match_parent">
+                    <LinearLayout android:id="@+id/linearColumnforum"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylecyan_1">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtForum"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_37pxv"
+                            android:layout_marginEnd="@dimen/_40pxh"
+                            android:layout_marginStart="@dimen/_40pxh"
+                            android:layout_marginTop="@dimen/_43pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{forumVM.forumModel.txtForum}"
+                            style="@style/txtPoppinssemibold14_2" tools:text="@string/lbl_forum"/>
+                    </LinearLayout>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_white_a700_border_cyan_900_radius_10"
+                        android:ellipsize="end"
+                        android:hint="@string/msg_what_do_you_wan"
+                        android:id="@+id/etFrameFour"
+                        android:inputType="text"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_40pxh"
+                        android:layout_marginStart="@dimen/_40pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_8pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_20pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@={forumVM.forumModel.etFrameFourValue}"
+                        android:textColorHint="@color/gray_501"
+                        style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_cyan_900_border_gray_50_radius_10"
+                        android:id="@+id/btnSearch"
+                        android:layout_gravity="bottom|end"
+                        android:layout_height="@dimen/_35pxh"
+                        android:layout_marginEnd="@dimen/_40pxh"
+                        android:layout_marginStart="@dimen/_40pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_35pxh"
+                        android:paddingHorizontal="@dimen/_12pxh"
+                        android:paddingVertical="@dimen/_12pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_search" tools:ignore="ContentDescription"/>
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/recyclerForum"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_35pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_29pxh}" tools:itemCount="5" tools:listitem="@layout/row_forum"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

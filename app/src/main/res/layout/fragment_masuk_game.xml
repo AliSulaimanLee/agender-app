@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="masukGameVM" type="com.agender.app.modules.masukgame.data.viewmodel.MasukGameVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecyan_1">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_45pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_11pxh"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="@dimen/_6pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft_white_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_white_a700"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtProfile"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_151pxh"
+                        android:layout_weight="0.88"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{masukGameVM.masukGameModel.txtProfile}"
+                        style="@style/txtPoppinssemibold15" tools:text="@string/lbl_profile"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameMasukgame"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_740pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_width="@dimen/_381pxh" style="@style/groupStylegray_50">
+            <LinearLayout android:id="@+id/linearColumnrectanglefive"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_2">
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearRowrectanglefive"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_36pxh"
+                    android:layout_marginStart="@dimen/_36pxh"
+                    android:layout_marginTop="@dimen/_141pxv"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageRectangleFive"
+                        android:layout_height="@dimen/_58pxh"
+                        android:layout_width="@dimen/_58pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_rectangle5}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle5"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEren"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_weight="0.49"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{masukGameVM.masukGameModel.txtEren}"
+                        style="@style/txtPoppinssemibold25" tools:text="@string/lbl_eren"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnten"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_36pxh"
+                    android:layout_marginStart="@dimen/_36pxh"
+                    android:layout_marginTop="@dimen/_31pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecyan_900_33cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{masukGameVM.masukGameModel.txtTen}"
+                        style="@style/txtPoppinssemibold25" tools:text="@string/lbl_10"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMateridiselesa"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{masukGameVM.masukGameModel.txtMateridiselesa}"
+                        style="@style/txtPoppinsregular16" tools:text="@string/msg_materi_diselesa"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumneighthundredtwelve"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_36pxh"
+                    android:layout_marginStart="@dimen/_36pxh"
+                    android:layout_marginTop="@dimen/_31pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecyan_900_33cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEightHundredTwelve"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{masukGameVM.masukGameModel.txtEightHundredTwelve}"
+                        style="@style/txtPoppinssemibold25" tools:text="@string/lbl_812"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAkumulasiskor"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{masukGameVM.masukGameModel.txtAkumulasiskor}"
+                        style="@style/txtPoppinsregular16" tools:text="@string/lbl_akumulasi_skor"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnsixhundredseventyone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_36pxh"
+                    android:layout_marginStart="@dimen/_36pxh"
+                    android:layout_marginTop="@dimen/_31pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecyan_900_33cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSixHundredSeventyOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{masukGameVM.masukGameModel.txtSixHundredSeventyOne}"
+                        style="@style/txtPoppinssemibold25" tools:text="@string/lbl_671"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAkumulasipoin"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_18pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{masukGameVM.masukGameModel.txtAkumulasipoin}"
+                        style="@style/txtPoppinsregular16" tools:text="@string/lbl_akumulasi_poin"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

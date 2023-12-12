@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homepageVM" type="com.agender.app.modules.homepage.data.viewmodel.HomepageVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnprofil"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowhijames"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnhijames"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.91"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtHiJames"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{homepageVM.homepageModel.txtHiJames}"
+                        style="@style/txtPoppinssemibold14" tools:text="@string/lbl_hi_james"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtJadilahpejuang"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{homepageVM.homepageModel.txtJadilahpejuang}"
+                        style="@style/txtPoppinsregular10" tools:text="@string/msg_jadilah_pejuang"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageProfil"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_30pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_5pxh}"
+                    imageRes="@{@drawable/img_rectangle5}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle5"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnframefour"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_50">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowframefour"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <EditText
+                    android:background="@drawable/rectangle_bg_white_a700_border_cyan_900_radius_10"
+                    android:ellipsize="end"
+                    android:hint="@string/msg_apa_yang_inigin"
+                    android:id="@+id/etFrameFour"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_20pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@={homepageVM.homepageModel.etFrameFourValue}"
+                    android:textColorHint="@color/gray_501"
+                    style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_cyan_900_radius_10"
+                    android:id="@+id/btnSearch"
+                    android:layout_height="@dimen/_35pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_width="@dimen/_35pxh"
+                    android:paddingHorizontal="@dimen/_12pxh"
+                    android:paddingVertical="@dimen/_12pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_search" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAkhirakhirini"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{homepageVM.homepageModel.txtAkhirakhirini}"
+                style="@style/txtPoppinssemibold14_1" tools:text="@string/msg_akhir_akhir_ini"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="end" android:id="@+id/recyclerHomepage"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_27pxh}" tools:itemCount="2" tools:listitem="@layout/row_homepage"/>
+            <LinearLayout android:id="@+id/linearRowkesetaraanGender"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnKesetaraanGender"
+                    android:layout_height="@dimen/_25pxv"
+                    android:layout_width="@dimen/_118pxh"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_10pxh"
+                    android:paddingStart="@dimen/_10pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_kesetaraan_gend"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/msg_kesetaraan_gend"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnKeadilanGenderOne"
+                    android:layout_height="@dimen/_25pxv"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_width="@dimen/_104pxh"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_10pxh"
+                    android:paddingStart="@dimen/_10pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_keadilan_gender"
+                    android:textAllCaps="false"
+                    style="@style/btnRoundedOutline" tools:text="@string/lbl_keadilan_gender"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFrameThirteen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_weight="0.37"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_3pxv"
+                    android:paddingStart="@dimen/_10pxh"
+                    android:paddingTop="@dimen/_6pxv"
+                    android:singleLine="true"
+                    android:text="@{homepageVM.homepageModel.txtFrameThirteen}"
+                    style="@style/txtRoundedOutline" tools:text="@string/msg_implementasi_ke"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHomepage1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_31pxv"
+                android:layout_width="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" itemSpace="@{@dimen/_22pxh}"
+                tools:itemCount="4" tools:listitem="@layout/row_homepage1"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

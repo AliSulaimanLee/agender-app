@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="introductionTwoVM" type="com.agender.app.modules.introductiontwo.data.viewmodel.IntroductionTwoVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameIntroductionTw"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylecyan_900">
+        <LinearLayout android:id="@+id/linearColumngroupeleven"
+            android:layout_gravity="top|end"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackgroupeleven"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_547pxv"
+                android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_317pxh">
+                <ImageView android:id="@+id/imageGroupEleven"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_418pxv"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_group11_green_200}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group11_green_200"/>
+                <ImageView android:id="@+id/imageShineyoungman"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_476pxh"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_163pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_shineyoungman}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_shineyoungman"/>
+            </FrameLayout>
+            <TextView android:id="@+id/txtMengenalikeset"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_57pxh"
+                android:layout_marginStart="@dimen/_57pxh"
+                android:layout_marginTop="@dimen/_55pxv"
+                android:layout_width="match_parent"
+                android:text="@{introductionTwoVM.introductionTwoModel.txtMengenalikeset}"
+                style="@style/txtPoppinssemibold20" tools:text="@string/msg_mengenali_keset"/>
+            <TextView android:id="@+id/txtKeseteraangend"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:text="@{introductionTwoVM.introductionTwoModel.txtKeseteraangend}"
+                style="@style/txtPoppinsregular16_1" tools:text="@string/msg_keseteraan_gend"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowrectanglefour"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_54pxh"
+                android:layout_marginStart="@dimen/_54pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_teal_400_radius_5"
+                    android:id="@+id/viewRectangleFour"
+                    android:layout_height="@dimen/_10pxv" android:layout_width="@dimen/_48pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_teal_900_radius_5"
+                    android:id="@+id/viewRectangleFourOne"
+                    android:layout_height="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_85pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_teal_400_radius_5"
+                    android:id="@+id/viewRectangleFourTwo"
+                    android:layout_height="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_48pxh"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

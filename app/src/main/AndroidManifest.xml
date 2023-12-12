@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.agender.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.agender.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.agender.app.modules.introductiontwo.ui.IntroductionTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.homepagecontainer.ui.HomepageContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.agender.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.agender.app.modules.materialpage.ui.MaterialPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.masukgameone.ui.MasukGameOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.kuislulus.ui.KuisLulusActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.materialdetailarticle.ui.MaterialDetailArticleActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.loginpage.ui.LogInPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.materialdetailvideo.ui.MaterialDetailVideoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.gameshootthewordone.ui.GameShootTheWordOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.pertanyaankuis.ui.PertanyaanKuisActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.introductionone.ui.IntroductionOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.materialdetailkuis.ui.MaterialDetailKuisActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.jawabankuis.ui.JawabanKuisActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.gameshoottheword.ui.GameShootTheWordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.signuppage.ui.SignUpPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.introductionthree.ui.IntroductionThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.agender.app.modules.kuistidaklulus.ui.KuisTidakLulusActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

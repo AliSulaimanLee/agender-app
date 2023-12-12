@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gameShootTheWordVM" type="com.agender.app.modules.gameshoottheword.data.viewmodel.GameShootTheWordVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnfeminis"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_75pxh"
+        android:layout_marginTop="@dimen/_46pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGameshootthe"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnprice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_6pxh"
+                    android:layout_marginStart="@dimen/_81pxh"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecyan_2">
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtPrice"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginEnd="@dimen/_41pxh"
+                        android:layout_marginStart="@dimen/_41pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{gameShootTheWordVM.gameShootTheWordModel.txtPrice}"
+                        style="@style/txtPoppinssemibold20_3" tools:text="@string/msg_musnahkan_diksi"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFEMINIS"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_88pxh"
+                    android:layout_marginStart="@dimen/_88pxh"
+                    android:layout_marginTop="@dimen/_131pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{gameShootTheWordVM.gameShootTheWordModel.txtFEMINIS}"
+                    style="@style/txtPoppinsextrabold20" tools:text="@string/lbl_feminis"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEQUALITY"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{gameShootTheWordVM.gameShootTheWordModel.txtEQUALITY}"
+                    style="@style/txtPoppinsextrabold20" tools:text="@string/lbl_equality"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPATRIARKI"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_102pxh"
+                    android:layout_marginStart="@dimen/_102pxh"
+                    android:layout_marginTop="@dimen/_56pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{gameShootTheWordVM.gameShootTheWordModel.txtPATRIARKI}"
+                    style="@style/txtPoppinsextrabold20" tools:text="@string/lbl_patriarki"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEQUITY"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_74pxh"
+                    android:layout_marginStart="@dimen/_74pxh"
+                    android:layout_marginTop="@dimen/_75pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{gameShootTheWordVM.gameShootTheWordModel.txtEQUITY}"
+                    style="@style/txtPoppinsextrabold20" tools:text="@string/lbl_equity"/>
+                <ImageView android:gravity="start"
+                    android:id="@+id/imageAirywomanshoo"
+                    android:layout_height="@dimen/_279pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_158pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_airywomanshoo}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_airywomanshoo"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

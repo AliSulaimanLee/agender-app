@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="materialDetailKuisVM" type="com.agender.app.modules.materialdetailkuis.data.viewmodel.MaterialDetailKuisVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_104pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecyan_1">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_45pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_11pxh"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="@dimen/_6pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft_white_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_white_a700"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtKuis"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_151pxh"
+                        android:layout_weight="0.83"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{materialDetailKuisVM.materialDetailKuisModel.txtKuis}"
+                        style="@style/txtPoppinssemibold15" tools:text="@string/lbl_kuis"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameMaterialdetail"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_782pxv"
+            android:layout_marginEnd="@dimen/_44pxh"
+            android:layout_marginStart="@dimen/_44pxh"
+            android:layout_width="@dimen/_342pxh" style="@style/groupStylegray_50">
+            <LinearLayout android:id="@+id/linearColumnprice"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_2">
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_91pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{materialDetailKuisVM.materialDetailKuisModel.txtPrice}"
+                    style="@style/txtPoppinssemibold20_2" tools:text="@string/msg_kuis_pengenala"/>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtHaiapakahkam"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_70pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{materialDetailKuisVM.materialDetailKuisModel.txtHaiapakahkam}"
+                    style="@style/txtPoppinssemibold15_3" tools:text="@string/msg_hai_apakah_kam"/>
+                <ImageView android:id="@+id/imageBusiness3dhap"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_198pxh"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_67pxv"
+                    android:layout_width="@dimen/_150pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_business3dhap}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_business3dhap"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnYakin"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_70pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_10pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_yakin"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_3" tools:text="@string/lbl_yakin"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnKembali"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_29pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_10pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_kembali"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRoundedOutline_2" tools:text="@string/lbl_kembali"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
